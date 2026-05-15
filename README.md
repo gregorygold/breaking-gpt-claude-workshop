@@ -40,6 +40,10 @@ npx promptfoo@latest view    # opens the web UI
 3. **Cost & context** — assert token usage, cost, and latency thresholds (`tests/cost-context.yaml`)
 4. **GPT vs Claude** — uncomment the Anthropic provider in `promptfooconfig.yaml` for side-by-side comparison
 
+## Cleanup (optional)
+
+Setup creates a `MediBot — Triage Assistant` in your OpenAI account. It costs nothing to leave it there; delete it any time at <https://platform.openai.com/assistants>.
+
 ## Troubleshooting
 
 See [docs/03-troubleshooting.md](docs/03-troubleshooting.md).
