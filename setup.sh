@@ -64,7 +64,7 @@ fi
 # 4. Smoke test
 echo "Running a 1-test smoke check…"
 set -a; . ./.env; set +a
-if npx --yes promptfoo@latest eval -c promptfooconfig.yaml --filter-tests 1 >/dev/null 2>&1; then
+if npx --yes promptfoo@latest eval -c promptfooconfig.yaml --filter-first-n 1 --no-cache --no-write --no-table --no-progress-bar >/dev/null 2>&1; then
   ok "Smoke test passed"
 else
   warn "Smoke test did not pass cleanly — see docs/03-troubleshooting.md"
