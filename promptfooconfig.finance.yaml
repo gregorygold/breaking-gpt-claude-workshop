@@ -10,9 +10,10 @@ providers:
       max_tokens: 400
 
   # OPTIONAL — multi-model comparison. Uncomment and add OPENROUTER_API_KEY to .env.
-  # - id: openrouter:meta-llama/llama-3.1-8b-instruct
-  # - id: openrouter:mistralai/mistral-7b-instruct
-  # - id: openrouter:google/gemma-2-9b-it
+  # Free-tier rate limit: 20 req/min, 200 req/day. The `:free` suffix is required.
+  # - id: openrouter:meta-llama/llama-3.3-70b-instruct:free
+  # - id: openrouter:google/gemma-4-31b-it:free
+  # - id: openrouter:qwen/qwen3-next-80b-a3b-instruct:free
 
   # OPTIONAL — GPT vs Claude. Requires ANTHROPIC_API_KEY.
   # - id: anthropic:messages:claude-haiku-4-5
