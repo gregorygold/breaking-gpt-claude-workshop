@@ -61,11 +61,7 @@ else
   ok ".env already exists"
 fi
 
-# 4. Create the MediBot assistant in the user's OpenAI account
-set -a; . ./.env; set +a
-node scripts/create-assistant.js
-
-# 5. Smoke test
+# 4. Smoke test
 echo "Running a 1-test smoke check…"
 set -a; . ./.env; set +a
 if npx --yes promptfoo@latest eval -c promptfooconfig.yaml --filter-first-n 1 --no-cache --no-write --no-table --no-progress-bar >/dev/null 2>&1; then
@@ -74,7 +70,7 @@ else
   warn "Smoke test did not pass cleanly — see docs/03-troubleshooting.md"
 fi
 
-# 6. Next steps
+# 5. Next steps
 echo
 ok "Setup complete."
 echo "Next:"

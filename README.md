@@ -1,6 +1,6 @@
 # Breaking GPT & Claude — Promptfoo Red-Team Workshop
 
-Hands-on AI bug-bounty workshop. The setup script spins up **MediBot** — a real OpenAI Assistant (a healthcare triage bot with strict guardrails) — in *your* OpenAI account. You then red-team it using [Promptfoo](https://www.promptfoo.dev) with prompt-injection, hallucination, and cost/context tests. Optionally compare MediBot against open-source models via OpenRouter, or GPT vs Claude.
+Hands-on AI bug-bounty workshop. You'll red-team **MediBot** — a healthcare triage chatbot (system prompt + GPT-4o-mini, which is how most production AI assistants are actually built) — using [Promptfoo](https://www.promptfoo.dev). Run prompt-injection, hallucination, and cost/context tests with structured assertions. Optionally compare against open-source models via OpenRouter or Claude.
 
 <p align="center">
   <img src="docs/qr.png" alt="Scan to clone" width="220" />
@@ -39,10 +39,6 @@ npx promptfoo@latest view    # opens the web UI
 2. **Hallucination traps** — confirm the model refuses to invent facts (`tests/hallucinations.yaml`)
 3. **Cost & context** — assert token usage, cost, and latency thresholds (`tests/cost-context.yaml`)
 4. **GPT vs Claude** — uncomment the Anthropic provider in `promptfooconfig.yaml` for side-by-side comparison
-
-## Cleanup (optional)
-
-Setup creates a `MediBot — Triage Assistant` in your OpenAI account. It costs nothing to leave it there; delete it any time at <https://platform.openai.com/assistants>.
 
 ## Troubleshooting
 

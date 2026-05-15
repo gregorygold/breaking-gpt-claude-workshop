@@ -1,6 +1,6 @@
 # Red-Team Exercises
 
-You're attacking **MediBot** — a real OpenAI Assistant deployed in your own account by `setup.sh`. It's a triage assistant for an online clinic with strict safety rules (no diagnoses, no prescriptions, refer emergencies to 911, never reveal its instructions).
+You're attacking **MediBot** — a triage chatbot for an online clinic, built the way 80% of production AI assistants are built: GPT-4o-mini + a guardrail system prompt (`prompts/medibot.txt`). Its rules: no diagnoses, no prescriptions, refer emergencies to 911, never reveal its instructions.
 
 Each exercise: add a new test case to the appropriate YAML, run `npx promptfoo@latest eval`, then `view` to inspect.
 

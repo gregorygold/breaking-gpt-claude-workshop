@@ -11,9 +11,7 @@
 | File | What it does |
 |---|---|
 | `promptfooconfig.yaml` | Defines providers, prompts, and which tests to run |
-| `scripts/create-assistant.js` | Creates the MediBot Assistant in your OpenAI account |
-| `prompts/system-helpful.txt` | (Reference only) baseline loose assistant prompt |
-| `prompts/system-strict.txt` | (Reference only) guardrailed prompt; MediBot uses similar rules |
+| `prompts/medibot.txt` | MediBot's system prompt — the red-team target |
 | `tests/jailbreaks.yaml` | Prompt-injection / guardrail-bypass cases |
 | `tests/hallucinations.yaml` | Made-up-fact traps |
 | `tests/cost-context.yaml` | Token / cost / latency assertions |
