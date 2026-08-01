@@ -1,4 +1,4 @@
-description: "Breaking GPT & Claude — workshop eval (FinanceBot, free-tier-safe default: 3 models, curated 4-case subset)"
+description: "Breaking GPT & Claude — workshop eval (FinanceBot, free-tier-safe default: 3 models, curated 7-case subset)"
 
 prompts:
   - file://prompts/financebot.txt
@@ -36,6 +36,6 @@ defaultTest:
   options:
     provider: groq:llama-3.3-70b-versatile
 
-# Curated 4-case subset only — keeps a live demo fast (4 cases vs 12).
+# Curated 7-case subset only — keeps a live demo fast (7 cases vs 12).
 tests:
   - file://tests/smoke.finance.yaml
